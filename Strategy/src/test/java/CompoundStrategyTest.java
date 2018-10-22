@@ -1,11 +1,6 @@
 import com.designpatterns.compoundstrategy.*;
-import com.designpatterns.simplestrategy.CompressionContext;
-import com.designpatterns.simplestrategy.RarCompressionStrategy;
-import com.designpatterns.simplestrategy.ZipCompressionStrategy;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 
 public class CompoundStrategyTest {
 
