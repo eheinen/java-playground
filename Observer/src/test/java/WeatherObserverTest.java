@@ -1,10 +1,10 @@
-import com.designpatterns.simpleobserver.AgencyStation;
-import com.designpatterns.simpleobserver.WeatherStation;
+import com.designpatterns.weatherobserver.AgencyStation;
+import com.designpatterns.weatherobserver.WeatherStation;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SimpleObserverTest {
+public class WeatherObserverTest {
 
     @Test
     public void assertCurrentTemperatureState() {

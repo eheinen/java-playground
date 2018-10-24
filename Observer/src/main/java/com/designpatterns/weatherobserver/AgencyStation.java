@@ -1,6 +1,6 @@
-package com.designpatterns.simpleobserver;
+package com.designpatterns.weatherobserver;
 
-public class AgencyStation implements IAgencyObserver {
+public class AgencyStation implements AgencyObserver {
 
     private WeatherStation weatherStation;
 

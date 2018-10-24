@@ -1,22 +1,22 @@
-package com.designpatterns.simpleobserver;
+package com.designpatterns.weatherobserver;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherStation implements IWeatherStationObservable {
+public class WeatherStation implements WeatherStationObservable {
 
     private float temperature;
     private float humidity;
 
-    private List<IAgencyObserver> observers = new ArrayList<>();
+    private List<AgencyObserver> observers = new ArrayList<>();
 
     @Override
-    public void add(IAgencyObserver observer) {
+    public void add(AgencyObserver observer) {
         observers.add(observer);
     }
 
     @Override
-    public void remove(IAgencyObserver observer) {
+    public void remove(AgencyObserver observer) {
         observers.remove(observer);
     }
 
@@ -25,7 +25,7 @@ public class WeatherStation implements IWeatherStationObservable {
         this.temperature = temperature;
         this.humidity = humidity;
 
-        for (IAgencyObserver observer : observers) {
+        for (AgencyObserver observer : observers) {
             observer.update();
         }
     }
