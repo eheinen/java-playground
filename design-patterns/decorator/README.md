@@ -21,5 +21,6 @@ Composite Pattern) and uses abstract classes or interface with composition to im
 #### Problem
  - You want to add behavior or state to individual objects at run-time. Inheritance is not feasible because it is static and applies to an entire class.
 
+#### Structure
 
 ![alt text](./structure.png)

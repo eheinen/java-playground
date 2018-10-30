@@ -15,4 +15,6 @@ Source: https://sourcemaking.com/design_patterns/strategy
 
  - A large monolithic design does not scale well as new graphing or monitoring requirements are levied.
 
+#### Structure
+
 ![alt text](./structure.png)
