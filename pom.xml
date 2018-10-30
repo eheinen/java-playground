@@ -4,14 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>designpatterns</groupId>
-    <artifactId>designpatterns</artifactId>
+    <groupId>java-playground</groupId>
+    <artifactId>java-playground</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>Strategy</module>
-        <module>Observer</module>
+        <module>design-patterns</module>
     </modules>
 
     <dependencies>
@@ -30,6 +29,7 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+                <version>3.8.0</version>
             </plugin>
         </plugins>
     </build>
