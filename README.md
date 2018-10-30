@@ -1,3 +1,3 @@
-# Java Design Patterns
+# Java Playground
 
-This repository is just a simple project separated in modules to my self java design pattern training.
+My own Java playground to implement and test everything I wish :D
