@@ -11,6 +11,9 @@
 
     <modules>
         <module>design-patterns</module>
+        <module>rest-api</module>
+        <module>teste</module>
+        <module>chat-bot</module>
     </modules>
 
     <dependencies>
