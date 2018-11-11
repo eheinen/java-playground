@@ -12,6 +12,7 @@
     <modules>
         <module>design-patterns</module>
         <module>rest-api</module>
+        <module>miscellaneous</module>
     </modules>
 
     <dependencies>
