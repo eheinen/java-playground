@@ -12,7 +12,9 @@
     <modules>
         <module>design-patterns</module>
         <module>rest-api</module>
-        <module>miscellaneous</module>
+        <module>com.eheinen.miscellaneous</module>
+        <module>exercises</module>
+        <module>authentication-methodologies</module>
     </modules>
 
     <dependencies>
