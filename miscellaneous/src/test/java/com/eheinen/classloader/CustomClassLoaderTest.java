@@ -1,4 +1,4 @@
-package com.eheinen.miscellaneous;
+package com.eheinen.classloader;
 
 import org.junit.jupiter.api.Test;
 

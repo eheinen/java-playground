@@ -1,4 +1,4 @@
-package com.eheinen.miscellaneous;
+package com.eheinen.classloader;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;

@@ -1,4 +1,4 @@
-package com.eheinen.miscellaneous;
+package com.eheinen.classloader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

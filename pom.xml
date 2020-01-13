@@ -15,6 +15,7 @@
         <module>com.eheinen.miscellaneous</module>
         <module>exercises</module>
         <module>authentication-methodologies</module>
+        <module>algorithms</module>
     </modules>
 
     <dependencies>
