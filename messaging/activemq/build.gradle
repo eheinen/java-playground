@@ -13,13 +13,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-amqp'
+	implementation 'org.springframework.boot:spring-boot-starter-activemq'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'com.rabbitmq.jms:rabbitmq-jms:2.3.0'
-	implementation 'org.springframework:spring-jms'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 	compileOnly 'org.projectlombok:lombok:1.18.20'
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 }

@@ -1,21 +1,14 @@
 spring:
-  rabbitmq:
-    username: guest
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: guest
     password: guest
-    host: localhost
-    port: 5672
+    packages:
+      trust-all: true 
 
 queues:
   dog:
     name: dog-queue
-
-topics:
-  dog:
-    name: dog-topic
-
-routing-keys:
-  dog: dog-routing
-
 
 server:
   port: 8082

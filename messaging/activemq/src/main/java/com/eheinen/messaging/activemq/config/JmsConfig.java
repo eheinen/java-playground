@@ -1,9 +1,10 @@
 package com.eheinen.messaging.activemq.config;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
-import org.springframework.jms.listener.SimpleMessageListenerContainer;
-import org.springframework.jms.listener.adapter.MessageListenerAdapter;
+import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 
 import javax.jms.ConnectionFactory;
 
@@ -11,21 +12,17 @@ import javax.jms.ConnectionFactory;
 @EnableJms
 public class JmsConfig {
 
-    
+    @Bean
+    public DefaultJmsListenerContainerFactory jmsListenerContainerFactory(
+            @Qualifier("jmsConnectionFactory") ConnectionFactory connectionFactory) {
 
-//    @Bean
-//    SimpleMessageListenerContainer container(ConnectionFactory connectionFactory,
-//                                             MessageListenerAdapter listenerAdapter) {
-//        SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
-//        container.setConnectionFactory(connectionFactory);
-//        container.setQueueNames(queueName);
-//        container.setMessageListener(listenerAdapter);
-//        return container;
-//    }
-//
-//    @Bean
-//    MessageListenerAdapter listenerAdapter(Receiver receiver) {
-//        return new MessageListenerAdapter(receiver, "receiveMessage");
-//    }
+        DefaultJmsListenerContainerFactory factory
+                = new DefaultJmsListenerContainerFactory();
+
+        factory.setConnectionFactory(connectionFactory);
+        factory.setConcurrency("5-10");
+
+        return factory;
+    }
 
 }
