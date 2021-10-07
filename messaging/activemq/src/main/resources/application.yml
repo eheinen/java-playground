@@ -1,0 +1,21 @@
+spring:
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+
+queues:
+  dog:
+    name: dog-queue
+
+topics:
+  dog:
+    name: dog-topic
+
+routing-keys:
+  dog: dog-routing
+
+
+server:
+  port: 8082
